@@ -1,0 +1,11 @@
+Package: unattended-upgrades-plugin-webhook
+Version: 0.8
+Architecture: amd64
+Maintainer: Phil Kauffman <philip@kauffman.me>
+Installed-Size: 24
+Depends: python3, python3-pip, unattended-upgrades (>= 2.10), apprise (>= 1.2.0)
+Section: admin
+Priority: optional
+Homepage: https://github.com/papamoose/unattended-upgrades-plugin-webhook
+Description: Unattended-Upgrades plugin to send notifications via webhooks
+ using the apprise python module.

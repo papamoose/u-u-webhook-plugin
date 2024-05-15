@@ -1,0 +1,17 @@
+Source: unattended-upgrades-plugin-webhook
+Section: admin
+Priority: optional
+Maintainer: Phil Kauffman <philip@kauffman.me>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/papamoose/unattended-upgrades-plugin-webhook
+#Vcs-Browser: https://salsa.debian.org/debian/unattended-upgrades-plugin-webhook
+#Vcs-Git: https://salsa.debian.org/debian/unattended-upgrades-plugin-webhook.git
+Rules-Requires-Root: no
+
+Package: unattended-upgrades-plugin-webhook
+Architecture: any
+Depends: python3, python3-pip, unattended-upgrades (>= 2.10), apprise (>= 1.2.0)
+#Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Unattended-Upgrades plugin to send notifications via webhooks
+ using the apprise python module.
