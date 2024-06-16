@@ -3,11 +3,10 @@ A plugin for apt [unattended-upgrades](https://github.com/mvo5/unattended-upgrad
 
 ## Install
 
-1. Ensure you are running u-u v2.11+
-2. The `Makefile` contains instructions on how to install manually.
+Ensure you are running [u-u v2.11+](https://github.com/mvo5/unattended-upgrades/tags). Your distro may or may not have it in its repository already.
 
 ### Makefile
-
+Manual installtion can be derived from this make file.
 ```
 make installplugin
 ```
