@@ -13,7 +13,7 @@ make installplugin
 
 ### Debian Package
 
-This is a work in progress. 
+This is a work in progress and will not work if your distro does not provide u-u v2.11+.
 
 ```
 make deb
