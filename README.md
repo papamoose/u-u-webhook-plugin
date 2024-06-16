@@ -1,6 +1,5 @@
 # u-u-webhook-plugin
-A plugin for apt unattended-upgrade to send u-u notifications via webhook using the apprise module.
-
+A plugin for apt [unattended-upgrades](https://github.com/mvo5/unattended-upgrades) to send u-u notifications via webhook using the [Apprise](https://github.com/caronc/apprise) python module.
 
 ## Install
 
