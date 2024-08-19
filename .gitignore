@@ -1,3 +1,3 @@
 debian/.debhelper
 debian/debhelper-build-stamp
-debina/unattended-upgrades-plugin-webhook
+debian/unattended-upgrades-plugin-webhook
