@@ -1,3 +1,9 @@
+unattended-upgrades-plugin-webhook (0.9) UNRELEASED; urgency=medium
+
+  * Rename apprise parts to more generic name webhook
+
+ -- Phil Kauffman <philip@kauffman.me>  Tue, 27 Feb 2024 20:55:30 -0700
+
 unattended-upgrades-plugin-webhook (0.8) UNRELEASED; urgency=medium
 
   * Initial Release.

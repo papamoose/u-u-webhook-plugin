@@ -1,2 +1,2 @@
-apprise.py /usr/share/unattended-upgrades/plugins/
-51uu-apprise /etc/apt/apt.conf.d/
+webhook_send.py /usr/share/unattended-upgrades/plugins/
+51uu-webhook /etc/apt/apt.conf.d/

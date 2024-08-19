@@ -16,7 +16,7 @@ variables which should be placed in /etc/apt/apt.conf.d/51uu-apprise.
 //  "";
 //};
 
-// When for the webhook to execute
+// When the webhook report should be sent.
 // Set this value to one of: "always", "only-on-error" or "on-change"
 //Unattended-Upgrade::WebhookReport "only-on-error";
 
@@ -25,6 +25,22 @@ variables which should be placed in /etc/apt/apt.conf.d/51uu-apprise.
 //Unattended-Upgrade::WebhookCharacterLimit 2000;
 </code>
 
+To install apprise you may use python pip or apt.
+* python3 -m pip install apprise
+* apt-get install apprise # Available since Debian 12 Bookworm
+
+
+For Developers:
+* "plugin_api": the API version as string of the form "1.0"
+* "hostname": The hostname of the machine that run u-u.
+* "success": A boolean that indicates if the run was successful
+* "result": A string with a human readable (and translated) status message
+* "packages_upgraded": A list of packages that got upgraded.
+* "packages_kept_back": A list of packages kept back.
+* "packages_kept_installed": A list of packages not auto-removed.
+* "reboot_required": Indicates a reboot is required.
+* "log_dpkg": The full dpkg log output.
+* "log_unattended_upgrades": The full unattended-upgrades log.
 """
 
 import apt_pkg
@@ -182,15 +198,3 @@ class UnattendedUpgradesPluginApprise:
 
         # Notify webhook
         self.webhook_notify(data)
-
-#    * "plugin_api": the API version as string of the form "1.0"
-#    * "hostname": The hostname of the machine that run u-u.
-#    * "success": A boolean that indicates if the run was successful
-#    * "result": A string with a human readable (and translated) status message
-#    * "packages_upgraded": A list of packages that got upgraded.
-#    * "packages_kept_back": A list of packages kept back.
-#    * "packages_kept_installed": A list of packages not auto-removed.
-#    * "reboot_required": Indicates a reboot is required.
-#    * "log_dpkg": The full dpkg log output.
-#    * "log_unattended_upgrades": The full unattended-upgrades log.
-

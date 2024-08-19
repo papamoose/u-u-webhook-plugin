@@ -8,12 +8,12 @@ depends:
 installplugin: depends plugin
 
 plugin:
-	install -D --mode=0644 ./apprise.py /etc/unattended-upgrades/plugins/apprise.py
-	install -D --mode=0644 ./51uu-apprise /etc/apt/apt.conf.d/51uu-apprise
+	install -D --mode=0644 ./webhook_send.py /etc/unattended-upgrades/plugins/webhook_send.py
+	install -D --mode=0644 ./51uu-webhook /etc/apt/apt.conf.d/51uu-webhook
 
 uninstallplugin:
-	rm -f /etc/unattended-upgrades/plugins/apprise.py
-	rm -f /etc/apt/apt.conf.d/51uu-apprise
+	rm -f /etc/unattended-upgrades/plugins/webhook_send.py
+	rm -f /etc/apt/apt.conf.d/51uu-webhook
 
 deb:
 	dpkg-buildpackage -rfakeroot -b -us -uc
